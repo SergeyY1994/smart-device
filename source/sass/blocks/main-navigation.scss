@@ -1,0 +1,44 @@
+.main-navigation__list {
+  display: grid;
+  grid-template-columns: repeat(2, 46.87%);
+  gap: 6.25%;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  font-family: $ff-ptmono;
+  list-style-type: none;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+}
+
+.main-navigation__link {
+  display: inline-block;
+  min-width: min-content;
+  min-height: 20px;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-alice-blue;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    min-width: 100%;
+    min-height: 40px;
+    height: 100%;
+    padding-left: 0;
+    font-size: 0;
+    background-position: center;
+  }
+
+  &--email {
+    background-image: url("/img/svg/email-icon.svg");
+  }
+
+  &--tel {
+    background-image: url("/img/svg/phone-icon.svg");
+  }
+}
