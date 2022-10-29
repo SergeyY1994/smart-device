@@ -1,0 +1,31 @@
+.contacts__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $ff-roboto-condensed;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-default-white;
+  text-transform: uppercase;
+
+  @media (max-width: ($vp-768 - 1px)) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding-left: 0;
+  font-family: $ff-ptmono;
+  line-height: 22px;
+  list-style-type: none;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__link {
+  color: $color-white-transparent-07;
+}

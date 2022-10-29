@@ -3,13 +3,17 @@
   left: 0;
   right: 0;
   background-image: $header-background;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    position: static;
+  }
 }
 
 .main-header__container {
   display: flex;
   align-items: center;
-  width: 64.58%;
-  min-width: 1024px;
+  width: $desktop-container-width;
+  min-width: desktop-container-min-width;
   min-height: 120px;
 
   @media (max-width: ($vp-1024 - 1px)) {
