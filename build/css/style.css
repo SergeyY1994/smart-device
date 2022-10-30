@@ -903,6 +903,10 @@ button,
   padding-bottom: 55px;
 }
 
+.main-footer__item {
+  position: relative;
+}
+
 .main-footer__logo-social-container {
   margin-right: 13.8%;
 }
@@ -997,6 +1001,10 @@ button,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.contacts__toggle {
+  display: none;
+}
+
 .site-sections__title {
   margin: 0;
   margin-bottom: 20px;
@@ -1022,6 +1030,10 @@ button,
 
 .site-sections__link {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.site-sections__toggle {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -1229,12 +1241,39 @@ button,
     min-height: auto;
   }
 
+  .main-footer__item {
+    width: 100%;
+  }
+
+  .main-footer__item::before {
+    position: absolute;
+    content: "";
+    left: -25px;
+    right: -25px;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(248, 253, 255, 0.7);
+  }
+
   .main-footer__logo-social-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+
+  .main-footer__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-footer__site-sections-list {
+    padding-bottom: 20px;
+  }
+
+  .main-footer__contacts-list {
+    padding-bottom: 20px;
   }
 
   .social {
@@ -1246,14 +1285,48 @@ button,
     justify-content: center;
   }
 
+  .contacts__toggle-container {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .contacts__title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0;
+  }
+
+  .contacts__toggle {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: none;
+  }
+
+  .site-sections__toggle-container {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .site-sections__title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0;
+  }
+
+  .site-sections__toggle {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: none;
   }
 }
 
