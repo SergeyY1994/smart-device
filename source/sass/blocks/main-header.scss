@@ -4,8 +4,9 @@
   right: 0;
   background-image: $header-background;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @include vp-1023 {
     position: static;
+    z-index: 1;
   }
 }
 
