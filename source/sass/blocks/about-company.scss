@@ -1,0 +1,88 @@
+.about-company__container {
+  width: 67.75%;
+  padding-left: 14.4%;
+  padding-right: 3%;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url("/img/about-company-background@1x.png");
+
+  @include vp-1023 {
+    width: 100%;
+    padding-left: 27%;
+    padding-right: 50px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background-image: none;
+  }
+}
+
+.about-company__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-black-pearl;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about-company p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black-pearl;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about-company__text {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+// .about-company p:not(:last-of-type) {
+//   margin-bottom: 15px;
+// }
+
+// .about-company p:last-of-type {
+//   margin-bottom: 20px;
+// }
+
+.about-company__button-more {
+  width: 180px;
+  justify-content: center;
+  padding: 14px 12px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $color-default-white;
+  color: $color-deep-sky-blue;
+  text-transform: uppercase;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+
+  @include vp-767 {
+    width: 130px;
+    padding: 10px 15px;
+  }
+}
+

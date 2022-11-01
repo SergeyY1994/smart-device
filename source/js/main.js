@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import './modules/footer-accordion';
 import './modules/change-text-in-main-block';
 import './modules/main-block-scroll';
+import './modules/about-company-more-information';
 
 // ---------------------------------
 
