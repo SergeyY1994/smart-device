@@ -4,6 +4,7 @@ import './modules/footer-accordion';
 import './modules/change-text-in-main-block';
 import './modules/main-block-scroll';
 import './modules/about-company-more-information';
+import './modules/change-text-in-products-service';
 
 // ---------------------------------
 
