@@ -5,6 +5,7 @@ import './modules/change-text-in-main-block';
 import './modules/main-block-scroll';
 import './modules/about-company-more-information';
 import './modules/change-text-in-products-service';
+import './modules/form-tel-mask';
 
 // ---------------------------------
 
