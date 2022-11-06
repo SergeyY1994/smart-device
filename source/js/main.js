@@ -6,6 +6,7 @@ import './modules/main-block-scroll';
 import './modules/about-company-more-information';
 import './modules/change-text-in-products-service';
 import './modules/form-tel-mask';
+import './modules/modal-form-focus-on-name';
 
 // ---------------------------------
 

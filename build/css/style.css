@@ -658,9 +658,9 @@ button,
 }
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b2ff;
 }
 @media (max-width: 767px) {
   .modal__content {
@@ -708,6 +708,127 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 40;
+  font-family: "PT Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal__form-field--name, .modal__form-field--tel, .modal__form-field--button {
+  margin-bottom: 20px;
+}
+.modal__form-field--user-question {
+  margin-bottom: 25px;
+}
+.modal__form-field--checkbox {
+  position: relative;
+}
+
+.modal__form-field input {
+  width: 100%;
+  padding: 15px;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: rgba(4, 20, 39, 0.1490196078);
+  border: none;
+}
+.modal__form-field input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.modal__form-field input::-moz-placeholder {
+  color: #ffffff;
+}
+.modal__form-field input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.modal__form-field input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.modal__form-field input::placeholder {
+  color: #ffffff;
+}
+
+.modal__form-field textarea {
+  width: 100%;
+  min-height: 155px;
+  padding: 25px 15px;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: rgba(4, 20, 39, 0.1490196078);
+  border: none;
+}
+.modal__form-field textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.modal__form-field textarea::-moz-placeholder {
+  color: #ffffff;
+}
+.modal__form-field textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+.modal__form-field textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+.modal__form-field textarea::placeholder {
+  color: #ffffff;
+}
+
+.modal__form-field button {
+  width: 100%;
+  padding: 15px 25px;
+  background-color: #041827;
+  border: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modal__form-field--checkbox label {
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.modal__form-field--checkbox span {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 1px #ffffff;
+  border-radius: 2px;
+}
+
+.modal__form-field--checkbox input:checked + span {
+  background-image: url("/img/svg/form-checked.svg");
 }
 
 .main-header {
