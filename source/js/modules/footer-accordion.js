@@ -10,6 +10,11 @@ if (window.matchMedia('(max-width: 768px)').matches) {
   contactsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
 }
 
+if (siteSectionsToggleElement && contactsToggleElement) {
+  siteSectionsToggleElement.addEventListener('click', siteSectionsListToggle);
+  contactsToggleElement.addEventListener('click', contactsListToggle);
+}
+
 function siteSectionsListToggle() {
   const siteSectionsListStatus = siteSectionsToggleElement.getAttribute('data-list-status');
 
@@ -45,7 +50,3 @@ function contactsListToggle() {
     contactsToggleElement.setAttribute('data-list-status', 'closed');
   }
 }
-
-siteSectionsToggleElement.addEventListener('click', siteSectionsListToggle);
-contactsToggleElement.addEventListener('click', contactsListToggle);
-

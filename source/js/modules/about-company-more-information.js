@@ -7,7 +7,9 @@ if (aboutCompanyElement && aboutCompanyParagraps && aboutCompanyButtonMoreElemen
     element.setAttribute('data-paragraph-display', 'is-close');
     element.style.display = 'none';
   }
+
   aboutCompanyButtonMoreElement.setAttribute('data-more-status', 'is-close');
+  aboutCompanyButtonMoreElement.addEventListener('click', aboutCompanyMoreInformationToggle);
 }
 
 function aboutCompanyMoreInformationToggle() {
@@ -34,5 +36,4 @@ function aboutCompanyMoreInformationToggle() {
   }
 }
 
-aboutCompanyButtonMoreElement.addEventListener('click', aboutCompanyMoreInformationToggle);
-
+// aboutCompanyButtonMoreElement.addEventListener('click', aboutCompanyMoreInformationToggle);

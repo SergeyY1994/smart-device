@@ -1,5 +1,5 @@
 .social {
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     display: flex;
     justify-content: center;
   }
@@ -8,12 +8,16 @@
 .social__list {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 20px;
+  gap: 16px;
   width: 150px;
   min-height: 40px;
   margin: 0;
   padding-left: 0;
   list-style-type: none;
+
+  @include vp-1023 {
+    width: 146px;
+  }
 }
 
 .social__item {

@@ -29,14 +29,22 @@
 }
 
 .benefits__item {
+  min-height: 300px;
   padding: 95px 40px 35px;
   border: 1px solid $color-whisper;
   border-left: 5px solid $color-deep-sky-blue;
-  background-position: 45px 40px;
+  background-position: 37px 40px;
   background-repeat: no-repeat;
 
+  @include vp-1023 {
+    min-height: 360px;
+    padding: 91px 40px 29px;
+  }
+
   @include vp-767 {
-    padding: 95px 30px 35px;
+    min-height: 340px;
+    padding: 72px 25px 10px;
+    background-position: 23px 27px;
   }
 
   @include hover {
@@ -63,6 +71,10 @@
   &--confidentiality {
     background-image: url("/img/svg/detective-icon.svg");
 
+    @include vp-767 {
+      min-height: 325px;
+    }
+
     @include hover {
       background-image: url("/img/svg/detective-icon-hover.svg");
     }
@@ -70,6 +82,10 @@
 
   &--value-personalization {
     background-image: url("/img/svg/tag-icon.svg");
+
+    @include vp-767 {
+      min-height: 325px;
+    }
 
     @include hover {
       background-image: url("/img/svg/tag-icon-hover.svg");
@@ -84,15 +100,40 @@
 
 .benefits__benefit-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
   color: $color-deep-sky-blue;
 
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
   @include vp-767 {
     font-size: 20px;
+  }
+}
+
+.benefits__item--confidentiality .benefits__benefit-title,
+.benefits__item--value-personalization .benefits__benefit-title {
+  margin-top: -5px;
+
+  @include vp-767 {
+    margin-top: 1px;
+  }
+}
+
+.benefits__item--confidentiality .benefits__benefit-title {
+  margin-bottom: 9px;
+}
+
+.benefits__item--value-personalization .benefits__benefit-title {
+  margin-bottom: 2px;
+
+  @include vp-767 {
+    margin-bottom: 8px;
   }
 }
 
