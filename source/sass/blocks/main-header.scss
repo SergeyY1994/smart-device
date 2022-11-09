@@ -14,12 +14,10 @@
   display: flex;
   align-items: center;
   width: 67.75%;
-  // min-width: desktop-container-min-width;
   min-height: 120px;
 
   @include vp-1023 {
     width: 100%;
-    // min-width: auto;
     min-height: 100px;
   }
 
@@ -31,16 +29,9 @@
 }
 
 .main-header__logo {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   margin-top: 29px;
   margin-bottom: 35px;
   margin-right: 13.2%;
-
-  // @include vp-1439 {
-  //   margin-right: auto;
-  // }
 
   @include vp-1023 {
     margin-right: auto;
@@ -63,7 +54,6 @@
 }
 
 .main-header__logo-img {
-  // max-width: ;
   @include vp-767 {
     width: 35px;
     height: 35px;
@@ -108,6 +98,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: $color-alice-blue;
   background-color: transparent;
   border: 1px solid $color-alice-blue;
   border-radius: 3px;

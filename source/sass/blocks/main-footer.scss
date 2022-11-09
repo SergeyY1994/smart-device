@@ -12,18 +12,17 @@
   padding-top: 50px;
   padding-bottom: 55px;
 
-  @media (max-width: ($vp-1440 - 1px)) {
+  @include vp-1439 {
     padding-top: 50px;
     padding-bottom: 55px;
   }
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @include vp-1023 {
     display: grid;
     grid-template-columns: 33% auto;
     gap: 0 19%;
     width: 100%;
     min-width: auto;
-    // min-height: 465px;
     padding-top: 50px;
     padding-bottom: 65px;
   }
@@ -41,7 +40,7 @@
 .main-footer__item {
   position: relative;
 
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     width: 100%;
   }
 
@@ -74,9 +73,6 @@
 }
 
 .main-footer__logo {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   margin-bottom: 30px;
 
   @media (max-width: ($vp-1024 - 1px)) {
@@ -91,19 +87,8 @@
   }
 }
 
-// .main-footer__logo-link {
-//   // width: 215px;
-
-//   // @media (max-width: ($vp-768 - 1px)) {
-//   //   width: 35px;
-//   // }
-// }
-
-.main-footer__logo-img {
-  // @media (max-width: ($vp-768 - 1px)) {
-  //   width: 35px;
-  //   height: 35px;
-  // }
+.main-footer__logo-link {
+  width: 215px;
 }
 
 .main-footer__social {
@@ -111,7 +96,6 @@
 
   @include vp-1023 {
     margin-top: 4px;
-    // margin-left: 15px;
   }
 
   @include vp-767 {
@@ -124,14 +108,9 @@
   margin-top: 7px;
   margin-right: 2.6%;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @include vp-1023 {
     width: 100%;
     margin-right: 0;
-  }
-
-  @media (max-width: ($vp-768 - 1px)) {
-    // вроде мместо него паддинг заголовка, проверить при отключенном js
-    // padding-bottom: 20px;
   }
 }
 
@@ -139,10 +118,11 @@
   display: grid;
   gap: 0 30px;
   grid-auto-flow: column;
-  grid-template-columns: repeat(2, 46.5%);
+  grid-template-columns: repeat(fit-contant, 46.5%);
   grid-template-rows: repeat(4, auto);
 
-  @media (max-width: ($vp-1024 - 1px)) {
+
+  @include vp-1023 {
     grid-auto-flow: row;
     grid-template-columns: auto;
   }
@@ -157,13 +137,9 @@
   min-width: 180px;
   margin-top: 7px;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @include vp-1023 {
     width: 100%;
   }
-
-  // @media (max-width: ($vp-768 - 1px)) {
-  //   padding-bottom: 20px;
-  // }
 }
 
 .main-footer__contacts-list {

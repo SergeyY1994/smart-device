@@ -847,6 +847,10 @@ button,
   background-image: url("/img/svg/form-checked.svg");
 }
 
+.modal__form-field--checkbox input:focus ~ label[for=modal-user-agreement] {
+  outline: 2px solid #000000;
+}
+
 .main-header {
   position: fixed;
   left: 0;
@@ -967,6 +971,7 @@ button,
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: #f2f5f7;
   background-color: transparent;
   border: 1px solid #f2f5f7;
   border-radius: 3px;
@@ -1015,6 +1020,7 @@ button,
 
 .main-navigation__link {
   display: inline-block;
+  vertical-align: baseline;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
@@ -1161,6 +1167,10 @@ button,
   }
 }
 
+.main-footer__logo-link {
+  width: 215px;
+}
+
 .main-footer__social {
   margin-left: 10px;
 }
@@ -1186,13 +1196,14 @@ button,
     margin-right: 0;
   }
 }
+
 .main-footer__site-sections-list {
   display: -ms-grid;
   display: grid;
   gap: 0 30px;
   grid-auto-flow: column;
-  -ms-grid-columns: (46.5%)[2];
-  grid-template-columns: repeat(2, 46.5%);
+  -ms-grid-columns: (46.5%)[fit-contant];
+  grid-template-columns: repeat(fit-contant, 46.5%);
   -ms-grid-rows: (auto)[4];
   grid-template-rows: repeat(4, auto);
 }
@@ -1514,6 +1525,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
+  color: #f2f5f7;
   background-color: #00b2ff;
   border-radius: 3px;
 }
@@ -1793,6 +1805,10 @@ button,
   background-image: url("/img/svg/form-checked.svg");
 }
 
+.form__field--checkbox input:focus ~ label[for=user-agreement] {
+  outline: 2px solid #000000;
+}
+
 .benefits__container {
   width: 67.75%;
   padding-top: 120px;
@@ -1873,11 +1889,18 @@ button,
   }
 }
 .benefits__item--confidentiality {
+  padding: 100px 40px 29px;
   background-image: url("/img/svg/detective-icon.svg");
+}
+@media (max-width: 1023px) {
+  .benefits__item--confidentiality {
+    padding: 92px 40px 29px;
+  }
 }
 @media (max-width: 767px) {
   .benefits__item--confidentiality {
     min-height: 325px;
+    padding: 79px 24px 29px;
   }
 }
 @media (hover: hover) {
@@ -1886,11 +1909,18 @@ button,
   }
 }
 .benefits__item--value-personalization {
+  padding: 100px 40px 29px;
   background-image: url("/img/svg/tag-icon.svg");
+}
+@media (max-width: 1023px) {
+  .benefits__item--value-personalization {
+    padding: 92px 40px 29px;
+  }
 }
 @media (max-width: 767px) {
   .benefits__item--value-personalization {
     min-height: 325px;
+    padding: 79px 24px 29px;
   }
 }
 @media (hover: hover) {
@@ -1931,20 +1961,37 @@ button,
 @media (max-width: 767px) {
   .benefits__item--confidentiality .benefits__benefit-title,
 .benefits__item--value-personalization .benefits__benefit-title {
+    font-size: 20px;
+    line-height: 28px;
     margin-top: 1px;
   }
 }
 
 .benefits__item--confidentiality .benefits__benefit-title {
-  margin-bottom: 9px;
+  margin-bottom: 13px;
+}
+@media (max-width: 1023px) {
+  .benefits__item--confidentiality .benefits__benefit-title {
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .benefits__item--confidentiality .benefits__benefit-title {
+    margin-bottom: 13px;
+  }
 }
 
 .benefits__item--value-personalization .benefits__benefit-title {
-  margin-bottom: 2px;
+  margin-bottom: 13px;
+}
+@media (max-width: 1023px) {
+  .benefits__item--value-personalization .benefits__benefit-title {
+    margin-bottom: 2px;
+  }
 }
 @media (max-width: 767px) {
   .benefits__item--value-personalization .benefits__benefit-title {
-    margin-bottom: 8px;
+    margin-bottom: 13px;
   }
 }
 

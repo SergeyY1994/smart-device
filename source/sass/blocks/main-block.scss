@@ -30,7 +30,6 @@
 
 .main-block__container {
   width: 54.7%;
-  // min-width: desktop-container-min-width;
   padding-top: 305px;
   padding-bottom: 280px;
 
@@ -107,6 +106,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
+  color: $color-alice-blue;
   background-color: $color-deep-sky-blue;
   border-radius: 3px;
 
