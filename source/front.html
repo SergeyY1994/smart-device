@@ -111,7 +111,7 @@
               </div>
               <div class="form__field form__field--tel">
                 <label class="visually-hidden" for="user-phone">Телефон</label>
-                <input type="tel" id="user-phone" name="user-phone" maxlength="17" placeholder="Телефон" data-phone-pattern required>
+                <input type="tel" id="user-phone" name="user-phone" minlength="17" maxlength="17" placeholder="Телефон" data-phone-pattern data-phone-clear="false" required>
               </div>
               <div class="form__field form__field--user-question">
                 <label class="visually-hidden" for="user-question">Ваш вопрос</label>
@@ -169,26 +169,26 @@
               <button class="site-sections__toggle" aria-label="Закрыть, открыть разделы сайта" data-list-status="closed" type="button"></button>
             </div>
             <ul class="main-footer__site-sections-list site-sections__list">
-              <li class="site-sections__item">
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--1">
                 <a class="site-sections__link" href="#">О Компании</a>
               </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="#">Продукты</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="#">Производство печатных плат</a>
-              </li>
-              <li class="site-sections__item">
-                <a class="site-sections__link" href="#">Монтаж печатных плат</a>
-              </li>
-              <li class="site-sections__item">
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--2">
                 <a class="site-sections__link" href="#">Комплектующие</a>
               </li>
-              <li class="site-sections__item">
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--3">
+                <a class="site-sections__link" href="#">Продукты</a>
+              </li>
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--4">
                 <a class="site-sections__link" href="#">Доставка</a>
               </li>
-              <li class="site-sections__item">
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--5">
+                <a class="site-sections__link" href="#">Производство печатных плат</a>
+              </li>
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--6">
                 <a class="site-sections__link" href="#">Контакты</a>
+              </li>
+              <li class="site-sections__item main-footer__site-sections-item main-footer__site-sections-item--7">
+                <a class="site-sections__link" href="#">Монтаж печатных плат</a>
               </li>
             </ul>
           </div>
@@ -232,7 +232,7 @@
               </div>
               <div class="modal__form-field modal__form-field--tel">
                 <label class="visually-hidden" for="modal-user-phone">Телефон</label>
-                <input class="named" type="tel" id="modal-user-phone" name="modal-user-phone" maxlength="17" placeholder="Телефон" data-phone-pattern required>
+                <input class="named" type="tel" id="modal-user-phone" name="modal-user-phone" minlength="17" maxlength="17" placeholder="Телефон" data-phone-pattern data-phone-clear="false" required>
               </div>
               <div class="modal__form-field modal__form-field--user-question">
                 <label class="visually-hidden" for="modal-user-question">Ваш вопрос</label>
