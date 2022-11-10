@@ -1,14 +1,12 @@
 .btn {
   display: inline-flex;
+  vertical-align: baseline;
   padding: 10px 20px;
-
   color: $color-default-white;
-
   background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
   user-select: none;
-
   transition: opacity $trans-default;
 
   &--red {
@@ -17,7 +15,6 @@
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
