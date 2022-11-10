@@ -41,6 +41,10 @@
   }
 }
 
+.products-service__mobile-title-text {
+  display: none;
+}
+
 .products-service__list {
   display: grid;
   grid-template-columns: repeat(3, 28.67%);

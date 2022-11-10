@@ -17,6 +17,7 @@
 
 .benefits__list {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding-left: 0;

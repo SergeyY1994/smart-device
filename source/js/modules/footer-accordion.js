@@ -3,14 +3,14 @@ const siteSectionsToggleElement = document.querySelector('.site-sections__toggle
 const contactsListElement = document.querySelector('.contacts__list');
 const contactsToggleElement = document.querySelector('.contacts__toggle');
 
-if (window.matchMedia('(max-width: 768px)').matches) {
-  siteSectionListElement.style.display = 'none';
-  contactsListElement.style.display = 'none';
-  siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
-  contactsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
-}
+if (siteSectionsToggleElement && contactsToggleElement && contactsListElement && siteSectionListElement) {
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    siteSectionListElement.style.display = 'none';
+    contactsListElement.style.display = 'none';
+    siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+    contactsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+  }
 
-if (siteSectionsToggleElement && contactsToggleElement) {
   siteSectionsToggleElement.addEventListener('click', siteSectionsListToggle);
   contactsToggleElement.addEventListener('click', contactsListToggle);
 }
