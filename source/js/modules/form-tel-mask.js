@@ -1,3 +1,5 @@
+const PHONE_LENGHT = 17;
+
 let phoneInputs = document.querySelectorAll('[data-phone-pattern]');
 
 if (phoneInputs) {
@@ -32,6 +34,12 @@ if (phoneInputs) {
           return a;
         }
       });
+
+      if (e.target.value.length < PHONE_LENGHT) {
+        e.target.form.querySelector('button[type=submit]').setAttribute('disabled', '');
+      } else {
+        e.target.form.querySelector('button[type=submit]').removeAttribute('disabled');
+      }
     };
 
     for (let elem of phoneInputs) {

@@ -1,7 +1,8 @@
 const mainHeaderModalButtonElement = document.querySelector('.main-header__modal-button');
+const modalTextInputElement = document.querySelector('input[name=modal-user-name]');
 
-if (mainHeaderModalButtonElement) {
+if (mainHeaderModalButtonElement && modalTextInputElement) {
   mainHeaderModalButtonElement.addEventListener('click', () => {
-    setTimeout(() => document.querySelector('input[name=modal-user-name]').focus(), 500);
+    setTimeout(() => modalTextInputElement.focus(), 500);
   });
 }
