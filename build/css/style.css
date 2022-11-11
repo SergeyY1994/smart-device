@@ -866,7 +866,8 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 67.75%;
+  width: 1302px;
+  max-width: 100%;
   min-height: 120px;
 }
 @media (max-width: 1023px) {
@@ -877,8 +878,6 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__container {
-    width: 100%;
-    min-width: auto;
     min-height: 70px;
   }
 }
@@ -1056,8 +1055,8 @@ button,
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  width: 67.75%;
-  min-width: desktop-container-min-width;
+  width: 1302px;
+  max-width: 100%;
   min-height: 280px;
   padding-top: 50px;
   padding-bottom: 55px;
@@ -1193,7 +1192,7 @@ button,
 .main-footer__site-sections-list {
   display: -ms-grid;
   display: grid;
-  gap: 0 30px;
+  gap: 9px 30px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: (auto)[4];
@@ -1201,12 +1200,14 @@ button,
 }
 @media (max-width: 1023px) {
   .main-footer__site-sections-list {
+    gap: 8px;
     -ms-grid-columns: auto;
     grid-template-columns: auto;
   }
 }
 @media (max-width: 767px) {
   .main-footer__site-sections-list {
+    gap: 10px;
     padding-bottom: 20px;
   }
 }
@@ -1375,15 +1376,6 @@ button,
   list-style-type: none;
 }
 
-.site-sections__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-@media (max-width: 1023px) {
-  .site-sections__item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-
 .site-sections__link {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1441,7 +1433,8 @@ button,
 }
 
 .main-block__container {
-  width: 54.7%;
+  width: 1051px;
+  max-width: 100%;
   padding-top: 305px;
   padding-bottom: 280px;
 }
@@ -1570,10 +1563,9 @@ button,
 }
 
 .form__container {
-  padding-top: 169px;
-  padding-bottom: 237px;
-  padding-left: 50.7%;
-  padding-right: 18.9%;
+  width: 1302px;
+  max-width: 100%;
+  padding: 169px 50px 237px 667px;
 }
 @media (max-width: 1023px) {
   .form__container {
@@ -1820,7 +1812,8 @@ button,
 }
 
 .benefits__container {
-  width: 67.75%;
+  width: 1302px;
+  max-width: 100%;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -2022,9 +2015,10 @@ button,
 }
 
 .about-company__container {
-  width: 67.75%;
+  width: 1302px;
+  max-width: 100%;
   min-height: 350px;
-  padding-left: 14.95%;
+  padding-left: 290px;
   padding-bottom: 117px;
   background-repeat: no-repeat;
   background-position: 3.5% top;
@@ -2139,7 +2133,8 @@ button,
 }
 
 .products-service__container {
-  width: 67.75%;
+  width: 1302px;
+  max-width: 100%;
   padding-top: 70px;
   padding-bottom: 140px;
 }

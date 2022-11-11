@@ -30,14 +30,6 @@
   list-style-type: none;
 }
 
-.site-sections__item:not(:last-child) {
-  margin-bottom: 9px;
-
-  @include vp-1023 {
-    margin-bottom: 8px;
-  }
-}
-
 .site-sections__link {
   color: $color-white-transparent-07;
 }

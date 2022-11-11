@@ -19,7 +19,7 @@ function siteSectionsListToggle() {
   const siteSectionsListStatus = siteSectionsToggleElement.getAttribute('data-list-status');
 
   if (siteSectionsListStatus === 'closed') {
-    siteSectionListElement.style.display = 'block';
+    siteSectionListElement.style.display = 'grid';
     siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/minus.svg")';
     siteSectionsToggleElement.setAttribute('data-list-status', 'opened');
 

@@ -13,7 +13,8 @@
 .main-header__container {
   display: flex;
   align-items: center;
-  width: 67.75%;
+  width: 1302px;
+  max-width: 100%;
   min-height: 120px;
 
   @include vp-1023 {
@@ -22,8 +23,6 @@
   }
 
   @include vp-767 {
-    width: 100%;
-    min-width: auto;
     min-height: 70px;
   }
 }
