@@ -11,9 +11,9 @@
 }
 
 .form__container {
-  width: 1302px;
+  width: 1242px;
   max-width: 100%;
-  padding: 169px 50px 237px 667px;
+  padding: 169px 20px 237px 0;
 
   @include vp-1023 {
     padding: 45px 50px 120px 50px;
@@ -26,7 +26,9 @@
 
 
 .form__title {
+  width: 585px;
   margin-top: 0;
+  margin-left: auto;
   margin-bottom: 10px;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -34,6 +36,7 @@
   line-height: 51px;
 
   @include vp-1023 {
+    width: auto;
     margin-bottom: 8px;
   }
 
@@ -45,14 +48,16 @@
 }
 
 .form__text {
+  width: 580px;
   margin-top: 0;
-  margin-left: 5px;
+  margin-left: auto;
   margin-bottom: 35px;
   font-family: $ff-ptmono;
   font-size: 16px;
   line-height: 22px;
 
   @include vp-1023 {
+    width: auto;
     margin-bottom: 25px;
     margin-left: 0;
   }
@@ -65,12 +70,14 @@
 }
 
 .form__user-form {
+  max-width: 580px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 30px;
-  margin-left: 5px;
+  margin-left: auto;
 
   @include vp-1023 {
+    max-width: none;
     margin-left: 0;
   }
 
@@ -121,6 +128,10 @@
   }
 }
 
+.form__field--checkbox input {
+  width: auto;
+}
+
 .form__field textarea {
   width: 100%;
   min-height: 155px;
@@ -149,7 +160,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 97%;
+  width: 265px;
   margin-top: 5px;
   padding: 15px 25px;
   background-color: $color-black-pearl;
