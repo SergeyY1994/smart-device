@@ -207,7 +207,7 @@
 }
 
 .modal__form-field--checkbox input:checked + span {
-  background-image: url("/img/svg/form-checked.svg");
+  background-image: url("../img/svg/form-checked.svg");
 }
 
 .modal__form-field--checkbox input:focus ~ label[for="modal-user-agreement"] {

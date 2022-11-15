@@ -55,24 +55,24 @@
   }
 
   &--operational-terms {
-    background-image: url("/img/svg/stopwatch-icon.svg");
+    background-image: url("../img/svg/stopwatch-icon.svg");
 
     @include hover {
-      background-image: url("/img/svg/stopwatch-icon-hover.svg");
+      background-image: url("../img/svg/stopwatch-icon-hover.svg");
     }
   }
 
   &--major-suppliers {
-    background-image: url("/img/svg/hired-icon.svg");
+    background-image: url("../img/svg/hired-icon.svg");
 
     @include hover {
-      background-image: url("/img/svg/hired-icon-hover.svg");
+      background-image: url("../img/svg/hired-icon-hover.svg");
     }
   }
 
   &--confidentiality {
     padding: 100px 40px 29px;
-    background-image: url("/img/svg/detective-icon.svg");
+    background-image: url("../img/svg/detective-icon.svg");
 
     @include vp-1023 {
       padding: 92px 40px 29px;
@@ -84,13 +84,13 @@
     }
 
     @include hover {
-      background-image: url("/img/svg/detective-icon-hover.svg");
+      background-image: url("../img/svg/detective-icon-hover.svg");
     }
   }
 
   &--value-personalization {
     padding: 100px 40px 29px;
-    background-image: url("/img/svg/tag-icon.svg");
+    background-image: url("../img/svg/tag-icon.svg");
 
     @include vp-1023 {
       padding: 92px 40px 29px;
@@ -102,7 +102,7 @@
     }
 
     @include hover {
-      background-image: url("/img/svg/tag-icon-hover.svg");
+      background-image: url("../img/svg/tag-icon-hover.svg");
     }
   }
 }

@@ -3,7 +3,7 @@
   background-color: $color-deep-sky-blue;
   background-position: 25% 44%, 0 0;
   background-repeat: no-repeat;
-  background-image: url("/img/svg/paper-airplane.svg"), linear-gradient(139deg, #026593 33.5%, #00b2ff 33.5%);
+  background-image: url("../img/svg/paper-airplane.svg"), linear-gradient(139deg, #026593 33.5%, #00b2ff 33.5%);
 
   @include vp-1023 {
     background-image: none;
@@ -216,7 +216,7 @@
 }
 
 .form__field--checkbox input:checked + span {
-  background-image: url("/img/svg/form-checked.svg");
+  background-image: url("../img/svg/form-checked.svg");
 }
 
 .form__field--checkbox input:focus ~ label[for="user-agreement"] {
