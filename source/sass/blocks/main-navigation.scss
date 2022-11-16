@@ -27,6 +27,11 @@
   color: $color-alice-blue;
   background-position: left;
   background-repeat: no-repeat;
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 
   @include vp-1023 {
     min-width: 100%;

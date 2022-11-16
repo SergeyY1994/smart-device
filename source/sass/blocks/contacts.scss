@@ -36,6 +36,11 @@
 
 .contacts__link {
   color: $color-white-transparent-07;
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 .contacts__toggle {

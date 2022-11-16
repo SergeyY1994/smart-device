@@ -881,6 +881,9 @@ button,
 }
 
 .main-header__logo {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   margin-top: 29px;
   margin-bottom: 35px;
   margin-right: 13.75%;
@@ -953,6 +956,8 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: start;
+      align-self: start;
   min-width: 160px;
   width: 160px;
   min-height: 40px;
@@ -1026,6 +1031,17 @@ button,
   color: #f2f5f7;
   background-position: left;
   background-repeat: no-repeat;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .main-navigation__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.main-navigation__link.focus-visible:focus {
+  opacity: 0.8;
 }
 @media (max-width: 1023px) {
   .main-navigation__link {
@@ -1288,6 +1304,20 @@ button,
           align-items: center;
 }
 
+.social__link {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .social__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.social__link.focus-visible:focus {
+  opacity: 0.8;
+}
+
 @media (max-width: 767px) {
   .contacts__toggle-container {
     position: relative;
@@ -1327,6 +1357,17 @@ button,
 
 .contacts__link {
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .contacts__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.contacts__link.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .contacts__toggle {
@@ -1381,6 +1422,17 @@ button,
 
 .site-sections__link {
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .site-sections__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.site-sections__link.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .site-sections__toggle {
@@ -1402,7 +1454,7 @@ button,
 
 .main-block {
   background-color: #000000;
-  background-image: url("https://htmlonelove.top/interns/13_iakovlev_device/img/main-background-desktop@1x.jpg");
+  background-image: url("../img/main-background-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f2f5f7;
@@ -1785,6 +1837,11 @@ button,
 }
 
 .form__field--checkbox label {
+  display: inline-block;
+  vertical-align: baseline;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
@@ -1848,9 +1905,6 @@ button,
 .benefits__list {
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -2228,6 +2282,17 @@ button,
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .products-service__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.products-service__link.focus-visible:focus {
+  opacity: 0.8;
 }
 @media (max-width: 1023px) {
   .products-service__link {

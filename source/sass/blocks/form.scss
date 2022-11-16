@@ -185,6 +185,9 @@
 }
 
 .form__field--checkbox label {
+  display: inline-block;
+  vertical-align: baseline;
+  height: min-content;
   font-family: $ff-ptmono;
   font-style: normal;
   font-weight: 400;

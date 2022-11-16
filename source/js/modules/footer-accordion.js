@@ -7,8 +7,8 @@ if (siteSectionsToggleElement && contactsToggleElement && contactsListElement &&
   if (window.matchMedia('(max-width: 768px)').matches) {
     siteSectionListElement.style.display = 'none';
     contactsListElement.style.display = 'none';
-    siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
-    contactsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+    siteSectionsToggleElement.style.backgroundImage = 'url("../img/svg/plus.svg")';
+    contactsToggleElement.style.backgroundImage = 'url("../img/svg/plus.svg")';
   }
 
   siteSectionsToggleElement.addEventListener('click', siteSectionsListToggle);
@@ -20,15 +20,15 @@ function siteSectionsListToggle() {
 
   if (siteSectionsListStatus === 'closed') {
     siteSectionListElement.style.display = 'grid';
-    siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/minus.svg")';
+    siteSectionsToggleElement.style.backgroundImage = 'url("../img/svg/minus.svg")';
     siteSectionsToggleElement.setAttribute('data-list-status', 'opened');
 
     contactsListElement.style.display = 'none';
-    contactsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+    contactsToggleElement.style.backgroundImage = 'url("../img/svg/plus.svg")';
     contactsToggleElement.setAttribute('data-list-status', 'closed');
   } else if (siteSectionsListStatus === 'opened') {
     siteSectionListElement.style.display = 'none';
-    siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+    siteSectionsToggleElement.style.backgroundImage = 'url("../img/svg/plus.svg")';
     siteSectionsToggleElement.setAttribute('data-list-status', 'closed');
   }
 }
@@ -38,15 +38,15 @@ function contactsListToggle() {
 
   if (contactsListStatus === 'closed') {
     contactsListElement.style.display = 'block';
-    contactsToggleElement.style.backgroundImage = 'url("/img/svg/minus.svg")';
+    contactsToggleElement.style.backgroundImage = 'url("../img/svg/minus.svg")';
     contactsToggleElement.setAttribute('data-list-status', 'opened');
 
     siteSectionListElement.style.display = 'none';
-    siteSectionsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+    siteSectionsToggleElement.style.backgroundImage = 'url("../img/svg/plus.svg")';
     siteSectionsToggleElement.setAttribute('data-list-status', 'closed');
   } else if (contactsListStatus === 'opened') {
     contactsListElement.style.display = 'none';
-    contactsToggleElement.style.backgroundImage = 'url("/img/svg/plus.svg")';
+    contactsToggleElement.style.backgroundImage = 'url("../img/svg/plus.svg")';
     contactsToggleElement.setAttribute('data-list-status', 'closed');
   }
 }
