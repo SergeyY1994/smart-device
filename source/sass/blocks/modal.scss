@@ -93,8 +93,12 @@
   background: $color-transparent;
   border: none;
   cursor: pointer;
-}
+  transition: opacity $trans-default;
 
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
 
 .modal__title {
   margin: 0;
@@ -118,6 +122,10 @@
   color: $color-default-white;
 }
 
+.modal__form {
+  display: grid;
+}
+
 .modal__form-field {
   &--name,
   &--tel {
@@ -126,6 +134,7 @@
 
   &--button {
     margin-bottom: 10px;
+    grid-row: 4;
   }
 
   &--user-question {
@@ -186,7 +195,7 @@
 
 .modal__form-field--checkbox label {
   padding-left: 35px;
-  font-style: normal;
+  font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
